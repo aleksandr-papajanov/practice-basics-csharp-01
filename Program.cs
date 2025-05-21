@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            EmployeeRegistry registry = new EmployeeRegistry();
+            ConsoleUI ui = new ConsoleUI(registry);
+
+            ui.Start();
         }
+
     }
 }
